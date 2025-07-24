@@ -104,7 +104,7 @@ nav ul li a {
 .plants-section{
     width: 90%;
     /* border: 1px solid black; */
-    margin: 100px auto;
+    margin: 120px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +171,7 @@ nav ul li a {
 .lover-section{
     width: 90%;
     /* border: 1px solid black; */
-    margin: 100px auto;
+    margin: 135px auto;
     display: flex;
     justify-content: space-between;
     gap: 50px;
@@ -244,7 +244,7 @@ nav ul li a {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        gap: 28px;
+        gap: 50px;
         /* border: 1px solid black; */
         padding: 0px;
         width: 100%;
