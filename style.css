@@ -1,5 +1,102 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #00000010;
+}
+
+/* Common Css Style */
+.primary-color{
+    color: #252432;
+}
+
+.secondary-color{
+    color: #000000;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* Header */
+header {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  padding:10px 0px;
+}
+
+.nav-section {
+  width: 100%;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  /* border: 1px solid black; */
+  width: 35%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #8987A1;
+  font-family: "Inter", sans-serif;
+}
+
+.hero-section{
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.hero-content{
+    /* border: 1px solid black; */
+    width: 55%;
+}
+
+.hero-content h1{
+    font-size: 4rem;
+    font-family: "Noto Serif", serif;
+}
+
+.hero-content h1 span{
+    color: #E95A08;
+}
+
+.hero-content p{
+    font-family: "Inter", sans-serif;
+    font-size: 1.375rem;
+    line-height: 1.4;
+    margin-top: 13px;
+}
+
+.hero-image img{
+    width: 100%;
 }
