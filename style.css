@@ -43,10 +43,6 @@ header {
   align-items: center;
 }
 
-.nav-section .logo img{
-    /* width: 100%; */
-}
-
 nav {
   /* border: 1px solid black; */
   width:39%;
@@ -105,6 +101,72 @@ nav ul li a {
     width: 100%;
 }
 
+.plants-section{
+    width: 90%;
+    /* border: 1px solid black; */
+    margin: 120px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.plants-top{
+    /* border: 1px solid black; */
+    text-align: center;
+    width: 70%;
+    /* margin: 0 auto; */
+}
+
+.plants-top h1{
+    font-weight: bold;
+    font-size: 3.125rem;
+    font-family: "Noto Serif", serif;
+}
+
+.plants-top h1 span{
+    color: #E95A08;
+}
+
+.plants-top p{
+    font-family: "Inter", sans-serif;
+    font-size: 1.375rem;
+    margin-top: 7px;
+    color: #00000050;
+}
+
+.plants-cards{
+    width: 100%;
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.plant-card{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    font-family: "Inter", sans-serif;
+    background-color: #FFFFFF;
+}
+
+.plant-card img{
+    width: 100%;
+}
+
+.plant-card button{
+    width: 100%;
+    padding: 11px;
+    font-weight: 600;
+    background-color: #E95A08;
+    color: #ffffff;
+    border: none;
+}
 
 
 /* For Mobile Devices */
@@ -145,5 +207,25 @@ nav ul li a {
 
     .hero-content p{
         font-size: 0.875rem;
+    }
+
+    .plants-top{
+        width: 90%;
+    }
+
+    .plants-top h1{
+        font-size: 2.5rem;
+    }
+
+    .plants-top p{
+        font-size: 0.875rem;
+    }
+
+    .plants-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .plant-card h2 , .plant-card h3{
+        font-size: 1rem;
     }
 }
