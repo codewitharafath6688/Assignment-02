@@ -171,7 +171,7 @@ nav ul li a {
 .lover-section{
     width: 90%;
     /* border: 1px solid black; */
-    margin: 135px auto;
+    margin: 125px auto;
     display: flex;
     justify-content: space-between;
     gap: 50px;
@@ -222,6 +222,108 @@ nav ul li a {
     font-size: 0.875rem;
     margin-top: 35px;
 }
+
+.deals-section{
+    width: 90%;
+    /* border: 1px solid black; */
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.deals-top{
+    width: 70%;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.deals-top h1{
+    font-size: 3.125rem;
+    font-family: "Noto Serif", serif;
+}
+
+.deals-top p{
+    font-family: "Inter", sans-serif;
+    font-size: 1.375rem;
+    color: #00000050;
+    margin-top: 15px;
+}
+
+.deals-cards{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.deal-card{
+    padding: 60px 0px;
+    border-radius: 14px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+
+.deal-card::before{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+
+.deal-card h2{
+    font-family: "Noto Serif", serif;
+    font-size: 1.6rem;
+    z-index: 1;
+}
+
+.deal-card a{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem;
+    z-index: 1;
+}
+
+.dc1{
+    background-image: url('./assets/deal-bloom.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.dc2{
+    background-image: url('./assets/deal-zabo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-row: span 2;
+}
+
+.dc3{
+    background-image: url('./assets/deal-ana.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
 
 /* For Mobile Devices */
 
@@ -305,5 +407,27 @@ nav ul li a {
     .lover-content h1{
         font-size: 1.95rem;
         /* border: 1px solid black; */
+    }
+
+    .deals-top h1{
+        font-size: 1.95rem;
+    }
+
+    .deals-top p{
+        font-size: 0.8rem;
+        color: #00000050;
+        font-weight: 600;
+    }
+
+    .deals-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .deal-card h2{
+        font-size: 1.25rem;
+    }
+
+    .deal-card a{
+        font-size: 1.15rem;
     }
 }
