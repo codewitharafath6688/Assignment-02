@@ -43,9 +43,13 @@ header {
   align-items: center;
 }
 
+.nav-section .logo img{
+    /* width: 100%; */
+}
+
 nav {
   /* border: 1px solid black; */
-  width: 35%;
+  width:39%;
 }
 
 nav ul{
@@ -99,4 +103,47 @@ nav ul li a {
 
 .hero-image img{
     width: 100%;
+}
+
+
+
+/* For Mobile Devices */
+
+@media screen and (max-width:576px) {
+    header{ 
+        padding:0px;
+        width: 100%;
+    }
+
+    .nav-section{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .home , .shop , .about{
+        display: none;
+    }
+
+    .hero-section{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 28px;
+        /* border: 1px solid black; */
+        padding: 0px;
+        width: 100%;
+    }
+
+    .hero-content{
+        width: 90%;
+        /* border: 1px solid black; */
+    }
+
+    .hero-content h1{
+        font-size: 2.5rem;
+    }
+
+    .hero-content p{
+        font-size: 0.875rem;
+    }
 }
