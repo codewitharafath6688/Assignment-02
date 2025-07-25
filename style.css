@@ -380,6 +380,55 @@ footer{
     margin-left: -1px;
 }
 
+.end-section{
+    width: 100%;
+    height: 30vh;
+}
+
+.end-container{
+    width: 90%;
+    /* border: 1px solid black; */
+    margin: 30px auto 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 20px;
+}
+
+.end-container > div{
+    /* border: 1px solid black; */
+    width: 22%;
+}
+
+.company-info p{
+    color: #00000090;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.info-link1 ul , .info-link2 ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    gap: 25px;
+}
+
+.info-link1 ul li , .info-link2 ul li{
+    list-style: none;
+}
+
+.info-link1 ul li a , .info-link2 ul li a{
+    text-decoration: none;
+    color: #6B7280;
+    font-size: 1rem;
+}
+
+.social img{
+   margin-left: 20px;
+}
 
 
 
@@ -387,7 +436,7 @@ footer{
 
 @media screen and (max-width:576px) {
     header{ 
-        padding:0px;
+        padding-top:10px;
         width: 100%;
     }
 
@@ -500,5 +549,24 @@ footer{
     .input-mail{
         width: 88%;
         height: 45px;
+    }
+
+    .end-container{
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .end-container > div {
+        width: 100%;
+    }
+
+    .info-link1 ul , .info-link2 ul {
+        padding: 0px;
+    }
+
+    .social img{
+        /* border: 1px solid black; */
+        margin: 0px;
+        margin-right: 20px;
     }
 }
